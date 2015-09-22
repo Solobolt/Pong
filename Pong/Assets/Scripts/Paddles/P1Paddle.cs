@@ -22,4 +22,9 @@ public class P1Paddle : Paddle {
 			gameManager.player1Score ++;
 		}
 	}
+
+	override public void StartingLocation ()
+	{
+		transform.position = new Vector3 (mainCamera.ScreenToWorldPoint(new Vector3(distanceFromWall, 0f,0f)).x,0,0);
+	}
 }

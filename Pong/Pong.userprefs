@@ -1,12 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Paddles\Paddle.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Paddles\TopWall.cs">
     <Files>
-      <File FileName="Assets\GameManager.cs" Line="4" Column="43" />
       <File FileName="Assets\Scripts\Paddles\P1Paddle.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Paddles\Paddle.cs" Line="7" Column="16" />
+      <File FileName="Assets\Scripts\Paddles\Paddle.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Paddles\P2Paddle.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Ball.cs" Line="15" Column="42" />
+      <File FileName="Assets\Scripts\Ball.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Paddles\TopWall.cs" Line="20" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
