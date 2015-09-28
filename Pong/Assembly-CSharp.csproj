@@ -48,11 +48,15 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Ball.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Paddles\BottomWall.cs" />
      <Compile Include="Assets\Scripts\Paddles\P1Paddle.cs" />
      <Compile Include="Assets\Scripts\Paddles\P2Paddle.cs" />
      <Compile Include="Assets\Scripts\Paddles\Paddle.cs" />
-     <Compile Include="Assets\Scripts\Paddles\TopWall.cs" />
+     <Compile Include="Assets\Scripts\Paddles\Walls\BottomWall.cs" />
+     <Compile Include="Assets\Scripts\Paddles\Walls\LeftWall.cs" />
+     <Compile Include="Assets\Scripts\Paddles\Walls\RightWall.cs" />
+     <Compile Include="Assets\Scripts\Paddles\Walls\TopWall.cs" />
+     <Compile Include="Assets\Scripts\TextEdit.cs" />
+     <Compile Include="Assets\UIController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.7/Standalone/UnityEngine.UI.dll</HintPath>
  </Reference>
