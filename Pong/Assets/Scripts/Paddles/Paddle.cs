@@ -6,7 +6,7 @@ public abstract class Paddle : MonoBehaviour {
 	public GameManager gameManager;
 	public float distanceFromWall= 20;
 
-	int speed = 7;
+	int speed = 5;
 
 	float topWall;
 	float bottomWall;
@@ -18,8 +18,8 @@ public abstract class Paddle : MonoBehaviour {
 		mainCamera = FindObjectOfType<Camera> ();
 		gameManager = FindObjectOfType<GameManager> ();
 		StartingLocation ();
-		topWall = (new Vector3 (0f,mainCamera.ScreenToWorldPoint(new Vector3 (0f, Screen.height,0f)).y,0).y) - (transform.localScale.y/1.2f);
-		bottomWall =  (new Vector3 (0f,mainCamera.ScreenToWorldPoint(new Vector3 (0f, 0f ,0f)).y).y) + (transform.localScale.y/1.2f);
+		topWall = (new Vector3 (0f,mainCamera.ScreenToWorldPoint(new Vector3 (0f, Screen.height,0f)).y,0).y) - (transform.localScale.y);
+		bottomWall =  (new Vector3 (0f,mainCamera.ScreenToWorldPoint(new Vector3 (0f, 0f ,0f)).y).y) + (transform.localScale.y);
 	}
 
 	// Handles Movement upwards
