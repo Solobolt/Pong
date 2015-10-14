@@ -7,13 +7,13 @@ public class Ball : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		transform.rigidbody.velocity = new Vector3 (2, 2, 0);
+		transform.GetComponent<Rigidbody>().velocity = new Vector3 (2, 2, 0);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		print (transform.rigidbody.velocity.y);
-		reflectVelocity = transform.rigidbody.velocity;
+		print (transform.GetComponent<Rigidbody>().velocity.y);
+		reflectVelocity = transform.GetComponent<Rigidbody>().velocity;
 	}
 
 	//handles impacts
@@ -22,14 +22,14 @@ public class Ball : MonoBehaviour {
 
 		if (coll.gameObject.tag == "Paddle") 
 		{
-			reflectVelocity.x = reflectVelocity.x * -1;
-			transform.rigidbody.velocity = reflectVelocity;
+			reflectVelocity.x = reflectVelocity.x * -1.01f;
+			transform.GetComponent<Rigidbody>().velocity = reflectVelocity;
 		}
 
 		if (coll.gameObject.tag == "Wall")
 		{
-			reflectVelocity.y = reflectVelocity.y * -1;
-			transform.rigidbody.velocity = reflectVelocity;
+			reflectVelocity.y = reflectVelocity.y * -1.01f;
+			transform.GetComponent<Rigidbody>().velocity = reflectVelocity;
 		}
 	}
 }
